@@ -58,6 +58,10 @@ import pcgen.rules.context.LoadContext;
 import pcgen.util.TestHelper;
 import plugin.lsttokens.testsupport.BuildUtilities;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.core.Is.is;
+import static org.hamcrest.core.IsNull.nullValue;
+
 /**
  * {@code WeaponTokenTest} contains tests to verify that the
  * WEAPON token is working correctly.
@@ -80,6 +84,9 @@ public class WeaponTokenTest extends AbstractCharacterTestCase
 	protected void setUp() throws Exception
 	{
 		super.setUp();
+		System.out.println(this);
+
+
 		PlayerCharacter character = getCharacter();
 		LoadContext context = Globals.getContext();
 
@@ -412,8 +419,8 @@ public class WeaponTokenTest extends AbstractCharacterTestCase
 		//	1H-P
 		assertEquals("1H-P - BASEHIT", "+14/+9/+4/-1", token.getToken(
 			"WEAPON.0.BASEHIT", character, null));
-		assertNull("1H-P - BASEHIT-H1", token.getToken(
-				"WEAPON.1.BASEHIT", character, null));
+		assertThat("1H-P - BASEHIT-H1", token.getToken(
+				"WEAPON.1.BASEHIT", character, null), is(nullValue()));
 		assertNull("1H-P - BASEHIT-H2", token.getToken(
 				"WEAPON.2.BASEHIT", character, null));
 
@@ -576,8 +583,10 @@ public class WeaponTokenTest extends AbstractCharacterTestCase
 			"WEAPON.3.NAME", character, null));
 		assertEquals("Large sword - Two handed should be fine",
 			"+18/+13/+8/+3", token.getToken("WEAPON.3.THHIT", character, null));
-		assertNull("Large sword - can't be wielded one handed", token
-				.getToken("WEAPON.3.BASEHIT", character, null));
+		assertThat("Large sword - can't be wielded one handed", token
+				.getToken("WEAPON.3.BASEHIT", character, null), is(nullValue()
+
+		));
 	}
 
 	/**
@@ -905,5 +914,45 @@ public class WeaponTokenTest extends AbstractCharacterTestCase
 			token.getToken("WEAPON.0.TEMPLATEHIT", character, null));
 		assertEquals("feat damage bonus, after adding", "+3",
 			token.getToken("WEAPON.0.TEMPLATEDAMAGE", character, null));
+	}
+
+
+	@Override
+	public String toString() {
+		return "WeaponTokenTest{" +
+				"dblWpn=" + dblWpn +
+				", bastardSword=" + bastardSword +
+				", largeSword=" + largeSword +
+				", fineSword=" + fineSword +
+				", longSpear=" + longSpear +
+				", bite=" + bite +
+				", longbow=" + longbow +
+				", arrow=" + arrow +
+				", wpnBonusAbility=" + wpnBonusAbility +
+				", wpnBonusPct=" + wpnBonusPct +
+				", str=" + str +
+				", cha=" + cha +
+				", dex=" + dex +
+				", wis=" + wis +
+				", intel=" + intel +
+				", lg=" + lg +
+				", ln=" + ln +
+				", le=" + le +
+				", ng=" + ng +
+				", tn=" + tn +
+				", ne=" + ne +
+				", cg=" + cg +
+				", cn=" + cn +
+				", ce=" + ce +
+				", colossal=" + colossal +
+				", gargantuan=" + gargantuan +
+				", huge=" + huge +
+				", large=" + large +
+				", medium=" + medium +
+				", small=" + small +
+				", tiny=" + tiny +
+				", diminutive=" + diminutive +
+				", fine=" + fine +
+				'}';
 	}
 }

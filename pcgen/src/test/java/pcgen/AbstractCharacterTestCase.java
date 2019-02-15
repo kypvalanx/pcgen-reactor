@@ -85,6 +85,11 @@ public abstract class AbstractCharacterTestCase extends TestCase
 	protected void setUp() throws Exception
 	{
 		super.setUp();
+
+		character = null;
+		context = null;
+		SystemCollections.clearGameModeList();
+
 		final GameMode gamemode = new GameMode("3.5");
 		gamemode.setBonusFeatLevels("3|3");
 		ControlTestSupport.enableFeature(gamemode.getModeContext(), CControl.ALIGNMENTFEATURE);
