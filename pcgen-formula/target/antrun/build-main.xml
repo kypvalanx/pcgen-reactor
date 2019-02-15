@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <echo>copying edited SimpleNode</echo>
+  <copy file="/Users/al029298/git/pcgen-reactor/pcgen-formula/src/main/jjtree/pcgen/base/formula/parse/SimpleNode.java.actual" tofile="/Users/al029298/git/pcgen-reactor/pcgen-formula/target/generated-sources/jjtree/pcgen/base/formula/parse/SimpleNode.java" overwrite="true"/>
+</target>
+</project>

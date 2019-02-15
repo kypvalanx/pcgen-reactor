@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="127" failures="0" name="pcgen.base.formula.parse.FormulaParserTest" time="0.039" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.1+13-LTS"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/al029298/git/pcgen-reactor"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="user.dir" value="/Users/al029298/git/pcgen-reactor"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.runtime.version" value="11.0.1+13-LTS"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/z_/m_yk1s95287cmln2vxt33_ndx_jbt8/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/usr/local/Cellar/maven/3.5.4/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/al029298/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/usr/local/Cellar/maven/3.5.4/libexec/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.net.preferIPv4Stack" value="true"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.6"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="library.jansi.path" value="/usr/local/Cellar/maven/3.5.4/libexec/lib/jansi-native"/>
+    <property name="user.home" value="/Users/al029298"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="java.class.path" value="/usr/local/Cellar/maven/3.5.4/libexec/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="user.name" value="al029298"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.1"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/local/Cellar/maven/3.5.4/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2018-10-16"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testGreaterThanOrEqualToNoLeading" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testGreaterThanOrEqualToNoTrailing" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testIntegerNegative" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testNotEqual" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testDivideNegative" time="0.001"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testOrFromNegative" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testExponentNoTrailing" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testGreaterThanOrEqualTo" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testDoublePositive" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testTooMayChildren" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testBracketFunctionTrailingComma" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testLessThan" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testDoubleNegative" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testGreaterThanOrEqualToFromNegative" time="0.001"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testParenFunctionLeadingComma" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testAdd" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testAnd" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testGreaterThanMultiple" time="0.001"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testLessThanOrEqualToFromNegative" time="0.001"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testLessThanOrEqualToNoLeading" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testMismatchedParenEnd" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testMultiplyNoTrailing" time="0.001"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testSubtract" time="0.001"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testNotEqualFromNegative" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testEqualNoLeading" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testLessThanNoLeading" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testGreaterThanOrEqualToMultiple" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testExponent" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testEqual" time="0.001"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testGreaterThanNegative" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testLessThanOrEqualToNoTrailing" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testDoubleNegativeNoTrailing" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testAddMultiple" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testGreaterThanOrEqualToNegative" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testParenFunctionDoubleComma" time="0.001"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testOr" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testOrNoLeading" time="0.001"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testDoublePositiveNoTrailing" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testEqualFromNegative" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testMultiplyMultiple" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testAddNegative" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testEmptyParenFunction" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testDotVariable" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testParenFunctionWithVariables" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testMismatchedParenEndWrap" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testVariable" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testEqualNoTrailing" time="0.001"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testMultiplyNegative" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testOrNoTrailing" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testAndFromNegative" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testDoublePositiveNoLeading" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testNotEqualNoTrailing" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testSpaceInVar" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testOrMultiple" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testSpaceInBracketFunction" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testDivideNoLeading" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testDoubleOne" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testLessThanOrEqualToMultiple" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testLessThanNoTrailing" time="0.001"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testEmptyBracketFunction" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testNotEqualMultiple" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testRemainderNoTrailing" time="0.001"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testOrNegative" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testAddNoTrailing" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testDoubleSign" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testQuotedString" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testIntegerZero" time="0.001"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testLessThanOrEqualToNegative" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testNotValidOutsideParens" time="0.001"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testGreaterThan" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testNotEqualNegative" time="0.002"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testExponentNoLeading" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testRemainderMultiple" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testEmptyParens" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testSubtractFromNegative" time="0.003"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testBracketFunctionWithVariables" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testVariable2" time="0.001"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testExtraParens" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testLessThanOrEqualTo" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testRemainderNegative" time="0.001"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testAndNoLeading" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testGreaterThanNoLeading" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testSpaceInParenFunction" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testDoubleNegativeNoLeading" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testMultiplyNoLeading" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testSubtractNoTrailing" time="0.001"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testQuotedStringWithSpaces" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testEqualMultiple" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testFormulaQuotedString" time="0.001"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testMismatchedParenStart" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testDivide" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testAndMultiple" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testAndNoTrailing" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testMultiply" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testLessThanFromNegative" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testRemainderNoLeading" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testEqualNegative" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testBracketFunctionWithDotVariable" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testAddNoLeading" time="0.001"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testRemainder" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testSubtractMultiple" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testGreaterThanNoTrailing" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testBracketFunctionLeadingComma" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testAndNegative" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testParens" time="0.001"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testParenFunctionTrailingComma" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testMismatchedParenStartWrap" time="0.001"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testVariableAdd" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testNotEqualNoLeading" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testSubtractNegative" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testLessThanMultiple" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testGreaterThanFromNegative" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testDivideNoTrailing" time="0.001"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testDoubleSign2" time="0.001"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testDoubleSign3" time="0.002"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testDoubleSign4" time="0.002"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testDoubleSign5" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testDoubleSign6" time="0.002"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testDoubleSign7" time="0.001"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testDoubleSign8" time="0.001"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testDoubleSign9" time="0.001"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testDivideMultiple" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testExponentMultiple" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testIntegerPositive" time="0.001"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testDoubleSign10" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testBracketFunctionDoubleComma" time="0"/>
+  <testcase classname="pcgen.base.formula.parse.FormulaParserTest" name="testLessThanNegative" time="0.001"/>
+</testsuite>

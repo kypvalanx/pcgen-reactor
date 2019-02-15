@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>pcgen-reactor</artifactId>
+        <groupId>org.pcgen.lijewski</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>pcgen-formula</artifactId>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>org.pcgen.lijewski</groupId>
+            <artifactId>pcgen-base</artifactId>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    <build>
+        <!--<sourceDirectory>${project.build.directory}/generated-sources/jjtree</sourceDirectory>-->
+
+        <plugins>
+            <plugin>
+                <groupId>com.helger.maven</groupId>
+                <artifactId>ph-javacc-maven-plugin</artifactId>
+                <version>4.1.2</version>
+                <executions>
+                    <execution>
+                        <id>jjtree-javacc</id>
+                        <phase>generate-sources</phase>
+                        <goals>
+                            <goal>jjtree-javacc</goal>
+                        </goals>
+                        <configuration>
+                            <jdkVersion>11</jdkVersion>
+                            <!--<sourceDirectory>src/main/jjtree</sourceDirectory>-->
+                            <outputDirectory>${project.build.directory}/generated-sources/jjtree
+                            </outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.8</version>
+                <executions>
+                    <execution>
+                        <phase>process-sources</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <tasks>
+                                <echo>copying edited SimpleNode</echo>
+                                <copy file="${project.basedir}/src/main/jjtree/pcgen/base/formula/parse/SimpleNode.java.actual"
+                                      tofile="${project.build.directory}/generated-sources/jjtree/pcgen/base/formula/parse/SimpleNode.java"
+                                      overwrite="true"/>
+                            </tasks>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <version>3.0.0</version>
+                <executions>
+                    <execution>
+                        <id>add generated compile sources</id>
+                        <phase>process-sources</phase>
+                        <goals>
+                            <goal>add-source</goal>
+                            <goal>add-test-source</goal>
+                        </goals>
+                        <configuration>
+                            <sources>
+                                <!--<source>src/main/generated</source>-->
+                                <!--<source>${project.build.directory}/generated-sources/javacc</source>-->
+                                <source>${project.build.directory}/generated-sources/jjtree</source>
+                            </sources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!--<plugin>-->
+            <!--<groupId>org.apache.maven.plugins</groupId>-->
+            <!--<artifactId>maven-compiler-plugin</artifactId>-->
+            <!--<version>3.8.0</version>-->
+            <!--<configuration>-->
+            <!--<generatedSourcesDirectory>${project.build.directory}/generated-sources/jjtree</generatedSourcesDirectory>-->
+            <!--</configuration>-->
+            <!--</plugin>-->
+        </plugins>
+
+    </build>
+</project>
